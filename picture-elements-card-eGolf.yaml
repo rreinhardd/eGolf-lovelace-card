@@ -1,0 +1,114 @@
+          # #START VW CAR IMAGE
+          # - type: picture-elements
+            # image: /local/e-golf.png
+            # elements:
+
+              # #State images to illustrate on top of car
+              # - type: image
+                # entity: switch.wvwzzzxxxxxxxxxxx_climatisation
+                # image: /local/blank.png
+                # style:
+                  # top: 37.5%
+                  # left: 55%
+                  # width: 37.1%
+                # state_image:
+                  # "on": /local/e-golf-heizung.png
+
+              # - type: image
+                # entity: binary_sensor.wvwzzzxxxxxxxxxxx_external_power
+                # image: /local/blank.png
+                # style:
+                  # top: 55.8%
+                  # left: 44.5%
+                  # width: 75%
+                # state_image:
+                  # "off": /local/wallbox.png
+                  # "on": /local/wallbox-connected.png
+
+              # - type: image
+                # entity: switch.wvwzzzxxxxxxxxxxx_charging
+                # image: /local/blank.png
+                # style:
+                  # top: 55.8%
+                  # left: 44.5%
+                  # width: 75%
+                # state_image:
+                  # "on": /local/wallbox-connected-and-charging.png
+
+              # - type: image
+                # entity: binary_sensor.wvwzzzxxxxxxxxxxx_parking_light
+                # image: /local/blank.png
+                # style:
+                  # top: 65.1%
+                  # left: 41.3%
+                  # width: 32%
+                # state_image:
+                  # "on": /local/e-golf-parklichter-cut.png
+
+              # - type: image
+                # entity: lock.wvwzzzxxxxxxxxxxx_door_locked
+                # image: /local/blank.png
+                # style:
+                  # top: 42.3%
+                  # left: 59%
+                  # width: 2%
+                # state_image:
+                  # locked: /local/blink.gif
+
+              # # Top left row with state icons
+
+              # - type: state-icon
+                # entity: lock.wvwzzzxxxxxxxxxxx_door_locked
+                # style:
+                  # top: 10%
+                  # left: 5%
+
+              # - type: state-icon
+                # entity: switch.wvwzzzxxxxxxxxxxx_climatisation
+                # hold_action:
+                  # action: toggle
+                # style:
+                  # top: 10%
+                  # left: 15%
+
+              # - type: state-icon
+                # entity: switch.wvwzzzxxxxxxxxxxx_window_heater
+                # hold_action:
+                  # action: toggle
+                # style:
+                  # top: 10%
+                  # left: 25%
+
+              # #Top right icons
+              # - type: state-icon
+                # entity: switch.wvwzzzxxxxxxxxxxx_charging
+                # style:
+                  # top: 10%
+                  # left: 62%
+
+              # - type: state-label
+                # entity: sensor.wvwzzzxxxxxxxxxxx_battery_level
+                # style:
+                  # top: 11%
+                  # left: 69%
+
+              # - type: state-icon
+                # entity: sensor.wvwzzzxxxxxxxxxxx_electric_range
+                # style:
+                  # top: 10%
+                  # left: 81%
+
+              # - type: state-label
+                # entity: sensor.wvwzzzxxxxxxxxxxx_electric_range
+                # style:
+                  # top: 11%
+                  # left: 91%
+
+              # - type: state-label
+                # entity: sensor.vw_charging_time_left_with_last_seen
+                # prefix: "Verbleibende Ladezeit: "
+                # style:
+                  # top: 91%
+                  # left: 50%
+
+              # #END VW IMAGE CARD

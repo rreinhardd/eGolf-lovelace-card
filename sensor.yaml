@@ -1,0 +1,6 @@
+### Letzte Verbindung zum VW-CarNet)
+- platform: template
+  sensors:
+    vw_charging_time_left_with_last_seen:
+      value_template: '{{ states.sensor.wvwzzzxxxxxxxxxxx_charging_time_left.state }} min (Stand: {{ ((as_timestamp(states.sensor.wvwzzzxxxxxxxxxxx_last_connected.state)) | timestamp_local) [11:16] }})'
+      friendly_name: 'Letzte CarNet Verbindung'
